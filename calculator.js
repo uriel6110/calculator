@@ -1,31 +1,62 @@
 function calculator(){
-    var oneNumber = prompt('Please enter your first number: ', 1);
-    var mathOpp = prompt('Choose one of the following: +, /, -, *', null)
+    var oneNumber = prompt('Please enter your first number: ', );
+    var mathOpp = prompt('Choose one of the following: +, /, -, *', );
     var twoNumber = prompt('Enter a second number: ');
-    var firstNumber = parseInt(oneNumber);
-    var secondNumber = parseInt(twoNumber);
+    var firstNumber = parseFloat(oneNumber);
+    var secondNumber = parseFloat(twoNumber);
+    var calculate = prompt('Calculate results?',  'Y/N');
 
+    function calc(calculate){
 
-    if(mathOpp === '+'){
-        let sum = firstNumber + secondNumber;
-        console.log(sum);
-    }
-    else if(mathOpp === '-'){
-        let minus = firstNumber - secondNumber;
-        console.log(minus);
-    }
-    else if(mathOpp === '/'){
-        let division = firstNumber / secondNumber;
-        console.log(division)
-    }
-    else if(mathOpp === '*'){
-        let multiply = firstNumber * secondNumber;
-        console.log(multiply);
-    }
-    else{
-        console.log('error');
-    }
+    var result;
+    
+    if(calculate = 'Y' || 'y' || 'yes' || 'YES'){    	
+	    if(mathOpp === '+'){
+	        result = firstNumber + secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '-'){
+	        result = firstNumber - secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '/'){
+	        result = firstNumber / secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '*'){
+	        result = firstNumber * secondNumber;
+	        console.log(result);
+	    }
+	    else{
+	        console.log('error');
+	    }
 
+	}
+	else if(calculate = 'N' || 'n' || 'no' || 'NO'){
+		 if(mathOpp === '+'){
+	        result = firstNumber + secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '-'){
+	        result = firstNumber - secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '/'){
+	        result = firstNumber / secondNumber;
+	        console.log(result);
+	    }
+	    else if(mathOpp === '*'){
+	        result = firstNumber * secondNumber;
+	        console.log(result);
+	    }
+	    else{
+	        console.log('error');
+	    }
+	}
+}
+calc();
 }
 
 calculator();
+
+
