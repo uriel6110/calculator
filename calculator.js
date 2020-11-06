@@ -10,7 +10,7 @@ function calculator(){
 
     var result;
     
-    if(calculate = 'Y' || 'y' || 'yes' || 'YES'){    	
+    if(calculate === 'Y' || 'y' || 'yes' || 'YES'){    	
 	    if(mathOpp === '+'){
 	        result = firstNumber + secondNumber;
 	        console.log(result);
@@ -32,7 +32,7 @@ function calculator(){
 	    }
 
 	}
-	else if(calculate = 'N' || 'n' || 'no' || 'NO'){
+	else if(calculate === 'N' || 'n' || 'no' || 'NO'){
 		 if(mathOpp === '+'){
 	        result = firstNumber + secondNumber;
 	        console.log(result);
